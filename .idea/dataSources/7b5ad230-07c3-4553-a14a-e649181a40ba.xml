@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jdbcdb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="jdbcdb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="people_info"/>
+    <column id="8" parent="7" name="NAME">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="9" parent="7" name="SEX">
+      <Position>2</Position>
+      <DataType>enum(&apos;F&apos;, &apos;M&apos;)|0</DataType>
+    </column>
+    <column id="10" parent="7" name="HEIGHT">
+      <Position>3</Position>
+      <DataType>double(16)|0</DataType>
+    </column>
+    <column id="11" parent="7" name="WEIGHT">
+      <Position>4</Position>
+      <DataType>double(16)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
